@@ -1,12 +1,149 @@
-.red{
-    background-color: red;
-    height: 150px;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
-.blog{
-    background-color: green;
-    height: 150px;
+.container{
+    width: 100%;
+    height: 100vh;
+
 }
-.white{
-    background-color: blueviolet;
-    height: 150px;
+a{
+    text-decoration: none;
+}
+.logo{
+    position:absolute;
+    left: 90px;
+    top: 50px;
+}
+.logo a{
+    text-shadow: 2px 2px 30px rgb(208, 9, 119);
+    font-weight: bold;
+    color: rgb(176, 13, 40);
+    font-size: 2rem;
+    letter-spacing: 1;
+}
+.SearchArea{
+    position:fixed ;
+    right: 90px;
+    top: 50px;
+    width:170px;
+    height:45px ;
+    background-color: #FFFFFF;
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50% ;
+    box-shadow:2px 2px 30px rgba(167, 158, 245, 0.2);
+    box-sizing: border-box;
+    z-index:1 ;
+  border: 1px solid rgba(167, 158, 245, 0.1);
+
+}
+.SearchBox input{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #1f1f1f;
+    font-family: calibri;
+    font-size: 1rem;
+    padding: 0px 10px;
+
+}
+.SearchBox input::placeholder{
+
+    color:#1d1d1d ;
+   font-weight:400 ; 
+   letter-spacing:2px ;
+   font-size: 0.800rem;
+   font-family: poppins;
+}
+.section1{
+    position:absolute ;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15%,-50%);
+}
+..section1 img{
+    height: 300px;
+}
+.section1button{
+    position:absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%,-50%);
+
+}
+.section1button h1, h2{
+    font-family:Roboto;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 60px;
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.08);
+    letter-spacing: 3px;
+    color: #0f010e;
+    text-transform: uppercase;
+
+}
+span{
+    color: #7A72FF;
+}
+.btn{
+   width: 150px;
+   height:40px ;
+   background-color: #2f2e41;
+   box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+   margin-top:20px ;
+   color: #fff;
+   font-family: sans-serif;
+   font-weight:600;
+   letter-spacing:0.5px ;
+   font-size: 1rem;
+   outline: none;
+   cursor: pointer;
+   border: transparent !important;
+
+}
+.btn:hover{
+    color: #ffffff;
+    background-color: #6e64ff;
+    transition: all ease 0.5s;
+}
+.icon{
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    padding: 5px 0px;
+    z-index: 1;
+}
+
+.icon a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+.icon a:hover .fa-facebook-f{
+    color: #6e64ff;
+}
+.icon a:hover .fa-twitter{
+    color: #090fb3;
+}
+.icon a:hover .fa-instagram{
+    color: #9f0a84;
+}
+.icon a:hover .fa-youtube{
+    color: #de0b0b;
 }
