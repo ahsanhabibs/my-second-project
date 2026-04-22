@@ -156,7 +156,7 @@ span{
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
-    margin-top: -60px;
+    margin-top: 100vh;
     position: relative;
     background-size: 1000px;
     border-radius: 10px;
@@ -173,8 +173,9 @@ span{
     color: #323543;
 }
 .product{
-    display: flex;
+    display: grid;
     justify-content: center;
+   grid-template-columns: repeat(3,1fr);
     align-items: center;
     flex-wrap: wrap;
     margin: 10px 0px;
@@ -193,4 +194,43 @@ span{
 }
 .productBox img{
     height: 180px;
+}
+.productBox p{
+    color: #4d4d4d70;
+    font-family: mariad pro;
+    font-size: 0.9rem;
+    letter-spacing: 0.5;
+}
+.productBox a{
+    color: black;
+    font-family: poppins;
+    font-size: 1rem;
+}
+.buybtn{
+    position:absolute ;
+    width: 140px;
+    height: 40px;
+    display:flex ;
+    justify-content: center;
+    align-items:center ;
+    font-family: calibri;
+    left:50% ;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    background:linear-gradient(120deg,#6b60ec 20%,#a166f4) ;
+    color:#FFFFFF ;
+    display: none;
+    animation:fade 0.2s ;
+}
+.productBox:hover .buybtn{
+    display: flex;
+}
+.productBox:hover{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #FFFFFF;
+}
+.productBox:hover a:last-child{
+    color: #FFF;
+    transition:all ease 0.3s;
 }
